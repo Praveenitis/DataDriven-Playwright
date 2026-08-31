@@ -15,7 +15,7 @@ const {demoblaze} = require('../testData/testData1.json')
     
     await login.navigate(process.env.BASE_URL) // to inject data from env file
 
-     // extract data from testdata file,we use index numbers since we saved data in arrays.
+    await login.loginCredentials(data.username,data.password) // extract data from testdata file,we use index numbers since we saved data in arrays.
     
     })
 
