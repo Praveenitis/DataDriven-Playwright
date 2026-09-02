@@ -14,7 +14,7 @@ const {DataDriven2} = require("../pages/readDatafromtestData2")
         await search.navigation(process.env.BASE_URL2)
         await search.searchproduct(data.products)
 
-        
+        await search.verifysearch(data.products)
 
 
 
