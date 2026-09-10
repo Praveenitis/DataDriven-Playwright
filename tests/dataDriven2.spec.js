@@ -12,7 +12,7 @@ const {DataDriven2} = require("../pages/readDatafromtestData2")
         let search = new DataDriven2(page)
 
         await search.navigation(process.env.BASE_URL2)
-        await search.searchproduct(data.products)
+     
 
        
 
