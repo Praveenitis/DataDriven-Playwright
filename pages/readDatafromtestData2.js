@@ -17,8 +17,7 @@ export class DataDriven2{
     }
 
     async searchproduct(prod){
-        await this.page.locator(this.searchbox).fill(prod)
-        await this.page.locator(this.searchbutton).click()
+       
     }
 
     async verifysearch(prod){
