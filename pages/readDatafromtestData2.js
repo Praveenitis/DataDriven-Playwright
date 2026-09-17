@@ -16,7 +16,19 @@ export class DataDriven2{
 
     }
 
-   
+    async searchproduct(prod){
+        await this.page.locator(this.searchbox).fill(prod)
+        await this.page.locator(this.searchbutton).click()
+    }
+
+    async verifysearch(prod){
+        await expect(this.page.locator(this.searchresult)).toBeVisible()
+        await expect(this.page.locator(this.searchresult2)).toContainText(prod)
+        await expect(this.page).toHaveURL(/s\?k=/);
+        await expect(this.page.locator(this.searchbox)).toHaveValue(prod)
+        
+
+    }
 
 
 }
