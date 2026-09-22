@@ -12,7 +12,7 @@ export class DataDriven2{
     }
 
     async navigation(url){
-        
+        await this.page.goto(url)
 
     }
 
