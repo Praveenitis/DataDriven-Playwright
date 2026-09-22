@@ -3,7 +3,7 @@ import {expect} from "@playwright/test"
 export class DataDriven2{
 
     constructor(page){
-        this.page = page;
+        
         this.searchbox = '[id="twotabsearchtextbox"]'
         this.searchbutton = '[id="nav-search-submit-button"]'
         
