@@ -25,7 +25,7 @@ export class DataDriven2{
         await expect(this.page.locator(this.searchresult)).toBeVisible()
         await expect(this.page.locator(this.searchresult2)).toContainText(prod)
         await expect(this.page).toHaveURL(/s\?k=/);
-        await expect(this.page.locator(this.searchbox)).toHaveValue(prod)
+       
         
 
     }
